@@ -34,13 +34,13 @@
    
    * `git clone https://github.com/calbert-hall/java-hackathon`, or download as a Zip file and unzip. 
    
-2. Navigate to just cloned folder tutorial-selenium-java-basic.
+2. Navigate to just cloned folder java_hackathon.
 
-3. Get an API key by logging into Applitools > Person Icon > My API Key
+3. Get an API key by logging into Applitools > Person Icon > My API Key.
 
-4. Open in any editor file src\test\java\com\applitools\quickstarts\BasicDemo.java  and set your ApiKey in string 'config.setApiKey("...")' (or comment the string and set APPLITOOLS_API_KEY environment variable) 
+4. Open in any editor file src\test\java\com\applitools\quickstarts\BasicDemo.java  and set your ApiKey in string 'config.setApiKey("...")' (or comment the string and set APPLITOOLS_API_KEY environment variable). 
 
-5. Run 'mvn -Dtest=BasicDemo test' or click the 'Run' button in Eclipse/IntelliJ
+5. Run 'mvn -Dtest=BasicDemo test' or click the 'Run' button in Eclipse/IntelliJ.
 
 6. If you want to run example from IDE perform next steps:
 
@@ -57,7 +57,7 @@
   You'll be working in the `Hackathon_Activity` file in `src/test/java/Hackathon`. An example solution is available in the `Hackathon_Solution` file, but don't look unless you're stuck! If you want to see view the expected results, you can run `mvn -D test=Hackathon_Solution test
 `.
 
-1. Open up the `Hackathon_Activity` java file. Put your name (or team name) as the Batch name, and be sure to set your API key as you did in the first example. You can run this using `mvn -D test=Hackathon_Activity -D devUrl=applifashionv1 test`
+1. Open up the `Hackathon_Activity` java file. Put your name (or team name) as the Batch name, and be sure to set your API key as you did in the first example. You can run this using `mvn -D test=Hackathon_Activity -D devUrl=applifashionv1 test`.
 
 
 2. We'll start with a test on [Applifashion V1](https://demo.applitools.com/gridHackathonV1.html). Create an Applitools test that navigates to the main page and takes a full page screenshot. See the first example on how to do this.
@@ -80,7 +80,8 @@ Draw a layout region over the area, or set the match level to "Layout" from with
    
 
 7. Development has made the changes to the bug region, which are on [Applifashion V2](https://demo.applitools.com/gridHackathonV2.html). 
-Run your test suite on Applifashion V2 and accept the now-fixed change and delete the bug region. 
+Run your test suite on Applifashion V2  (` mvn -D test=Hackathon_Solution -D envUrl=applifashionv2 test  
+   `) and accept the now-fixed change and delete the bug region. 
    You'll see several unresolved tests; accept them and add or remove regions as needed!
   
  
